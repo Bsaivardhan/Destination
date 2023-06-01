@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Travle Blog</title>
+    <style>
+        .navbar{
+            background-color: rgb(255, 157, 0);
+            color: black;
+        }
+        li{
+            color: black;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        #Destination{
+background-color: black;
+padding:150px 0;
+}
+.sub-title{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cursive;
+    font-size: 40px;
+    color: white;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+padding:12px 14px;
+}
+.work img{
+width:100%;
+height: 450px;
+width:100%;
+border-radius: 10px;
+display: block;
+
+}
+.layer{
+width: 100%;
+height: 0%;
+background: linear-gradient(rgba(247, 237, 237, 0.5),#a44229);
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer h3,p{
+font-weight: 500;
+margin-bottom: 20px;
+font-size: 30px;
+}
+
+
+.work:hover img {
+transform: scale(1.1);
+
+}
+.work:hover .layer{
+height: 100%;
+
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Travel Blog</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Destination.html">Destination</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contactme.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div id="Destination">
+
+        <div class="container">
+            <h1 class="sub-title">VISITED PLACES...</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="yadagirigutta.jpeg" alt="img">
+                    <div class="layer">
+                        <h3>Yadagiri gutta</h3>
+                        <br>
+                        <p>Yadagirigutta is the most unique, beautiful and pleasant Hillock with moderate Climate in all seasons.</p>
+                    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="siddipet.jpg" alt="img">
+                    <div class="layer">
+                        <h3>Siddipet</h3>
+                        <p>The place provides recreation for all age groups and is being compared with the Tankbund of Hyderabad. </p>
+                       
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="AnanthagiriHills.jpeg" alt="img">
+                    <div class="layer">
+                        <h3>AnanthagiriHills</h3>
+                        <p>Good place to visit during winter. Specially who wanted to escape from city's .
+                           </p>              
+                          
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+        </div>
+</body>
+</html>
